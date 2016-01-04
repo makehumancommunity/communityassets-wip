@@ -28,7 +28,10 @@ This repo is intended for collaborative work. If all you want to do is share som
 
 It may or may not make sense to also submit the results rather than only the source material. For example, you can decide if you want to submit a mhclo + obj file as well as the blend file you used to produce those files. 
 
-There is a size limit on github repos, so don't include files which are unnecessary for the asset. In particular, try to keep the size of the .blend file down (for example, do not pack textures inside the blend, add them separately).
+There is a size limit on github repos, so don't include files which are unnecessary for the asset. In particular, try to keep the size of the .blend file down (for example, do not pack textures inside the blend, add them separately). 
+
+IF AT ALL POSSIBLE, TRY TO REMOVE THE BASE MESH FROM THE BLEND FILE BEFORE COMMITTING IT. Including the base mesh increases the file size with 3 mb, and anyone downloading your blend can simply click "load human" in the makeclothes panel to restore it. 
+This is just a strong recommendation, not a hard requirement. If you have a good reason for including the base mesh, then you won't be shot for doing so.
 
 ## In case of conflict
 
