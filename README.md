@@ -14,7 +14,7 @@ Note that since CC0 isn't viral, there's nothing stopping you from assigning ano
 
 ## Getting commit access
 
-If you want to send things here, either ask me for commit access or make a pull request. If you want commit access, I need to know your github ID. 
+If you want to send things here, either ask me for commit access or make a pull request. If you want commit access, I need to know your github ID. So if you want access, send "joepal" a PM on the forums.
 
 ## What to submit
 
