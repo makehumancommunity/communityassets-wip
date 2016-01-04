@@ -1,0 +1,776 @@
+{
+    "bones": {
+        "RIGHT_PEC": {
+            "head": "RIGHT_PEC_head",
+            "parent": "mChest",
+            "reference": null,
+            "roll": 0.2632913589477539,
+            "tail": "RIGHT_PEC_tail"
+        },
+        "LEFT_PEC": {
+            "head": "LEFT_PEC_head",
+            "parent": "mChest",
+            "reference": null,
+            "roll": -0.2632913589477539,
+            "tail": "LEFT_PEC_tail"
+        },
+        "mAnkleLeft": {
+            "head": "mAnkleLeft_head",
+            "parent": "mKneeLeft",
+            "reference": ["foot.L"],
+            "roll": 0.20731236040592194,
+            "tail": "mAnkleLeft_tail"
+        },
+        "mAnkleRight": {
+            "head": "mAnkleRight_head",
+            "parent": "mKneeRight",
+            "reference": ["foot.R"],
+            "roll": -0.20731236040592194,
+            "tail": "mAnkleRight_tail"
+        },
+        "mChest": {
+            "head": "mChest_head",
+            "parent": "mTorso",
+            "reference": ["spine01","spine02"],
+            "roll": -1.097262385119091e-11,
+            "tail": "mChest_tail"
+        },
+        "mCollarLeft": {
+            "head": "mCollarLeft_head",
+            "parent": "mChest",
+            "reference": ["clavicle.L","shoulder01.L"],
+            "roll": 3.1415927410125732,
+            "tail": "mCollarLeft_tail"
+        },
+        "mCollarRight": {
+            "head": "mCollarRight_head",
+            "parent": "mChest",
+            "reference": ["clavicle.R","shoulder01.R"],
+            "roll": -3.1415927410125732,
+            "tail": "mCollarRight_tail"
+        },
+        "mElbowLeft": {
+            "head": "mElbowLeft_head",
+            "parent": "mShoulderLeft",
+            "reference": ["lowerarm01.L","lowerarm02.L"],
+            "roll": 0.0,
+            "tail": "mElbowLeft_tail"
+        },
+        "mElbowRight": {
+            "head": "mElbowRight_head",
+            "parent": "mShoulderRight",
+            "reference": ["lowerarm01.R","lowerarm02.R"],
+            "roll": 0.0,
+            "tail": "mElbowRight_tail"
+        },
+        "mEyeLeft": {
+            "head": "mEyeLeft_head",
+            "parent": "mHead",
+            "reference": ["eye.L"],
+            "roll": 0.04707758128643036,
+            "tail": "mEyeLeft_tail"
+        },
+        "mEyeRight": {
+            "head": "mEyeRight_head",
+            "parent": "mHead",
+            "reference": ["eye.R"],
+            "roll": -0.04707758128643036,
+            "tail": "mEyeRight_tail"
+        },
+        "mFootLeft": {
+            "head": "mFootLeft_head",
+            "parent": "mAnkleLeft",
+            "reference": ["toe1-1.L","toe1-2.L"],
+             "weights_reference": ["toe1-1.L","toe1-2.L","toe1-3.L","toe2-1.L","toe2-2.L","toe2-3.L","toe3-1.L","toe3-2.L","toe3-3.L","toe4-1.L","toe4-2.L","toe4-3.L","toe5-1.L","toe5-2.L","toe5-3.L"],
+            "roll": 0.0,
+            "tail": "mFootLeft_tail"
+        },
+        "mFootRight": {
+            "head": "mFootRight_head",
+            "parent": "mAnkleRight",
+            "weights_reference": ["toe1-1.R","toe1-2.R","toe1-3.R","toe2-1.R","toe2-2.R","toe2-3.R","toe3-1.R","toe3-2.R","toe3-3.R","toe4-1.R","toe4-2.R","toe4-3.R","toe5-1.R","toe5-2.R","toe5-3.R"],
+            "reference": ["toe1-1.R","toe1-2.R"],
+            
+            "roll": 0.0,
+            "tail": "mFootRight_tail"
+        },
+        "mHead": {
+            "head": "mHead_head",
+            "parent": "mNeck",
+            "reference": ["head"],
+            "roll": -3.3251599390604625e-11,
+            "tail": "mHead_tail"
+        },
+        "mHipLeft": {
+            "head": "mHipLeft_head",
+            "parent": "mPelvis",
+            "reference": ["pelvis.L","upperleg01.L","upperleg02.L"],
+            "weights_reference": ["upperleg01.L","upperleg02.L"],
+            "roll": 0.0,
+            "tail": "mHipLeft_tail"
+        },
+        "mHipRight": {
+            "head": "mHipRight_head",
+            "parent": "mPelvis",
+            "reference": ["pelvis.R","upperleg01.R","upperleg02.R"],
+            "weights_reference": ["upperleg01.R","upperleg02.R"],
+            "roll": 0.0,
+            "tail": "mHipRight_tail"
+        },
+        "mKneeLeft": {
+            "head": "mKneeLeft_head",
+            "parent": "mHipLeft",
+            "reference": ["lowerleg01.L","lowerleg02.L"],
+            "roll": 0.0,
+            "tail": "mKneeLeft_tail"
+        },
+        "mKneeRight": {
+            "head": "mKneeRight_head",
+            "parent": "mHipRight",
+            "reference": ["lowerleg01.R","lowerleg02.R"],
+            "roll": 0.0,
+            "tail": "mKneeRight_tail"
+        },
+        "mNeck": {
+            "head": "mNeck_head",
+            "parent": "mChest",
+            "reference": ["neck01","neck02","neck03"],
+            "roll": 0.0,
+            "tail": "mNeck_tail"
+        },
+        "mPelvis": {
+            "head": "mPelvis_head",
+            "parent": null,
+            "reference": ["root","spine05"],
+            "roll": -4.466459702090475e-10,
+            "weights_reference": ["root", "spine05","pelvis.R","pelvis.L"],
+            "tail": "mPelvis_tail"
+        },
+        "mShoulderLeft": {
+            "head": "mShoulderLeft_head",
+            "parent": "mCollarLeft",
+            "reference": ["upperarm01.L","upperarm02.L"],
+            "roll": 3.138939619064331,
+            "tail": "mShoulderLeft_tail"
+        },
+        "mShoulderRight": {
+            "head": "mShoulderRight_head",
+            "parent": "mCollarRight",
+            "reference": ["upperarm01.R","upperarm02.R"],
+            "roll": -3.138939619064331,
+            "tail": "mShoulderRight_tail"
+        },
+        "mSkull": {
+            "head": "mSkull_head",
+            "parent": "mHead",
+            "reference": null,
+            "roll": -3.3251599390604625e-11,
+            "tail": "mSkull_tail"
+        },
+        "mToeLeft": {
+            "head": "mToeLeft_head",
+            "parent": "mFootLeft",
+            "reference": null,
+            "roll": -0.2632913589477539,
+            "tail": "mToeLeft_tail"
+        },
+        "mToeRight": {
+            "head": "mToeRight_head",
+            "parent": "mFootRight",
+            "reference": null,
+            "roll": 0.2632913589477539,
+            "tail": "mToeRight_tail"
+        },
+        "mTorso": {
+            "head": "mTorso_head",
+            "parent": "mPelvis",
+            "reference": ["spine03","spine04"],
+            "roll": 7.760130871226067e-10,
+            "tail": "mTorso_tail"
+        },
+        "mWristLeft": {
+            "head": "mWristLeft_head",
+            "parent": "mElbowLeft",
+            "reference": ["wrist.L","metacarpal2.L"],
+            "roll": -0.5689927339553833,
+            "tail": "mWristLeft_tail"
+        },
+        "mWristRight": {
+            "head": "mWristRight_head",
+            "parent": "mElbowRight",
+            "reference": ["wrist.R","metacarpal2.R"],
+            "roll": 0.5689927339553833,
+            "tail": "mWristRight_tail"
+        }
+    },
+    "copyright": "(c) Makehuman.org 2014",
+    "description": "OpenSim compliant skeleton",
+    "joints": {
+          "LEFT_PEC_head": [
+            13654,
+            13655,
+            13656,
+            13657,
+            13658,
+            13659,
+            13660,
+            13661
+        ],
+         "LEFT_PEC_tail": [
+            8451
+        ],
+        "RIGHT_PEC_head": [
+            13654,
+            13655,
+            13656,
+            13657,
+            13658,
+            13659,
+            13660,
+            13661
+        ],
+        "RIGHT_PEC_tail": [
+            1779
+        ],
+        "mAnkleLeft_head": [
+            13830,
+            13831,
+            13832,
+            13833,
+            13834,
+            13835,
+            13836,
+            13837
+        ],
+        "mAnkleLeft_tail": [
+            13798,
+            13799,
+            13800,
+            13801,
+            13802,
+            13803,
+            13804,
+            13805
+        ],
+        "mAnkleRight_head": [
+            14270,
+            14271,
+            14272,
+            14273,
+            14274,
+            14275,
+            14276,
+            14277
+        ],
+        "mAnkleRight_tail": [
+            14238,
+            14239,
+            14240,
+            14241,
+            14242,
+            14243,
+            14244,
+            14245
+        ],
+        "mChest_head": [
+            13646,
+            13647,
+            13648,
+            13649,
+            13650,
+            13651,
+            13652,
+            13653
+        ],
+        "mChest_tail": [
+            14534,
+            14535,
+            14536,
+            14537,
+            14538,
+            14539,
+            14540,
+            14541
+        ],
+        "mCollarLeft_head": [
+            14062,
+            14063,
+            14064,
+            14065,
+            14066,
+            14067,
+            14068,
+            14069
+        ],
+        "mCollarLeft_tail": [
+            14046,
+            14047,
+            14048,
+            14049,
+            14050,
+            14051,
+            14052,
+            14053
+        ],
+        "mCollarRight_head": [
+            14502,
+            14503,
+            14504,
+            14505,
+            14506,
+            14507,
+            14508,
+            14509
+        ],
+        "mCollarRight_tail": [
+            14486,
+            14487,
+            14488,
+            14489,
+            14490,
+            14491,
+            14492,
+            14493
+        ],
+        "mElbowLeft_head": [
+            14038,
+            14039,
+            14040,
+            14041,
+            14042,
+            14043,
+            14044,
+            14045
+        ],
+        "mElbowLeft_tail": [
+            14030,
+            14031,
+            14032,
+            14033,
+            14034,
+            14035,
+            14036,
+            14037
+        ],
+        "mElbowRight_head": [
+            14478,
+            14479,
+            14480,
+            14481,
+            14482,
+            14483,
+            14484,
+            14485
+        ],
+        "mElbowRight_tail": [
+            14470,
+            14471,
+            14472,
+            14473,
+            14474,
+            14475,
+            14476,
+            14477
+        ],
+        "mEyeLeft_head": [
+            13606,
+            13607,
+            13608,
+            13609,
+            13610,
+            13611,
+            13612,
+            13613
+        ],
+        "mEyeLeft_tail": [
+            14086,
+            14087,
+            14088,
+            14089,
+            14090,
+            14091,
+            14092,
+            14093
+        ],
+        "mEyeRight_head": [
+            13614,
+            13615,
+            13616,
+            13617,
+            13618,
+            13619,
+            13620,
+            13621
+        ],
+        "mEyeRight_tail": [
+            14518,
+            14519,
+            14520,
+            14521,
+            14522,
+            14523,
+            14524,
+            14525
+        ],
+        "mFootLeft_head": [
+            13798,
+            13799,
+            13800,
+            13801,
+            13802,
+            13803,
+            13804,
+            13805
+        ],
+        "mFootLeft_tail": [
+            13726,
+            13727,
+            13728,
+            13729,
+            13730,
+            13731,
+            13732,
+            13733
+        ],
+        "mFootRight_head": [
+            14238,
+            14239,
+            14240,
+            14241,
+            14242,
+            14243,
+            14244,
+            14245
+        ],
+        "mFootRight_tail": [
+            14166,
+            14167,
+            14168,
+            14169,
+            14170,
+            14171,
+            14172,
+            14173
+        ],
+        "mHead_head": [
+            14070,
+            14071,
+            14072,
+            14073,
+            14074,
+            14075,
+            14076,
+            14077
+        ],
+        "mHead_tail": [
+            14070,
+            14071,
+            14072,
+            14073,
+            14074,
+            14075,
+            14076,
+            14077,
+            14566,
+            14567,
+            14568,
+            14569,
+            14570,
+            14571,
+            14572,
+            14573
+        ],
+        "mHipLeft_head": [
+            13846,
+            13847,
+            13848,
+            13849,
+            13850,
+            13851,
+            13852,
+            13853
+        ],
+        "mHipLeft_tail": [
+            13838,
+            13839,
+            13840,
+            13841,
+            13842,
+            13843,
+            13844,
+            13845
+        ],
+        "mHipRight_head": [
+            14286,
+            14287,
+            14288,
+            14289,
+            14290,
+            14291,
+            14292,
+            14293
+        ],
+        "mHipRight_tail": [
+            14278,
+            14279,
+            14280,
+            14281,
+            14282,
+            14283,
+            14284,
+            14285
+        ],
+        "mKneeLeft_head": [
+            13838,
+            13839,
+            13840,
+            13841,
+            13842,
+            13843,
+            13844,
+            13845
+        ],
+        "mKneeLeft_tail": [
+            13830,
+            13831,
+            13832,
+            13833,
+            13834,
+            13835,
+            13836,
+            13837
+        ],
+        "mKneeRight_head": [
+            14278,
+            14279,
+            14280,
+            14281,
+            14282,
+            14283,
+            14284,
+            14285
+        ],
+        "mKneeRight_tail": [
+            14270,
+            14271,
+            14272,
+            14273,
+            14274,
+            14275,
+            14276,
+            14277
+        ],
+        "mNeck_head": [
+            14534,
+            14535,
+            14536,
+            14537,
+            14538,
+            14539,
+            14540,
+            14541
+        ],
+        "mNeck_tail": [
+            14070,
+            14071,
+            14072,
+            14073,
+            14074,
+            14075,
+            14076,
+            14077
+        ],
+        "mPelvis_head": [
+            13622,
+            13623,
+            13624,
+            13625,
+            13626,
+            13627,
+            13628,
+            13629
+        ],
+        "mPelvis_tail": [
+            13630,
+            13631,
+            13632,
+            13633,
+            13634,
+            13635,
+            13636,
+            13637
+        ],
+        "mShoulderLeft_head": [
+            14046,
+            14047,
+            14048,
+            14049,
+            14050,
+            14051,
+            14052,
+            14053
+        ],
+        "mShoulderLeft_tail": [
+            14038,
+            14039,
+            14040,
+            14041,
+            14042,
+            14043,
+            14044,
+            14045
+        ],
+        "mShoulderRight_head": [
+            14486,
+            14487,
+            14488,
+            14489,
+            14490,
+            14491,
+            14492,
+            14493
+        ],
+        "mShoulderRight_tail": [
+            14478,
+            14479,
+            14480,
+            14481,
+            14482,
+            14483,
+            14484,
+            14485
+        ],
+        "mSkull_head": [
+            14566,
+            14567,
+            14568,
+            14569,
+            14570,
+            14571,
+            14572,
+            14573,
+            14070,
+            14071,
+            14072,
+            14073,
+            14074,
+            14075,
+            14076,
+            14077
+        ],
+        "mSkull_tail": [
+            14566,
+            14567,
+            14568,
+            14569,
+            14570,
+            14571,
+            14572,
+            14573
+        ],
+        "mToeLeft_head": [
+            13726,
+            13727,
+            13728,
+            13729,
+            13730,
+            13731,
+            13732,
+            13733
+        ],
+        "mToeLeft_tail": [
+            13662,
+            13663,
+            13664,
+            13665,
+            13666,
+            13667,
+            13668,
+            13669
+        ],
+        "mToeRight_head": [
+            14166,
+            14167,
+            14168,
+            14169,
+            14170,
+            14171,
+            14172,
+            14173
+        ],
+        "mToeRight_tail": [
+            14102,
+            14103,
+            14104,
+            14105,
+            14106,
+            14107,
+            14108,
+            14109
+        ],
+        "mTorso_head": [
+            13630,
+            13631,
+            13632,
+            13633,
+            13634,
+            13635,
+            13636,
+            13637
+        ],
+        "mTorso_tail": [
+            13646,
+            13647,
+            13648,
+            13649,
+            13650,
+            13651,
+            13652,
+            13653
+        ],
+        "mWristLeft_head": [
+            14030,
+            14031,
+            14032,
+            14033,
+            14034,
+            14035,
+            14036,
+            14037
+        ],
+        "mWristLeft_tail": [
+            13862,
+            13863,
+            13864,
+            13865,
+            13866,
+            13867,
+            13868,
+            13869
+        ],
+        "mWristRight_head": [
+            14470,
+            14471,
+            14472,
+            14473,
+            14474,
+            14475,
+            14476,
+            14477
+        ],
+        "mWristRight_tail": [
+            14302,
+            14303,
+            14304,
+            14305,
+            14306,
+            14307,
+            14308,
+            14309
+        ]
+    },
+    "license": "GNU Affero General Public License 3",
+    "name": "OpenSim",
+    "tags": ["game"],
+    "version": 102
+}
